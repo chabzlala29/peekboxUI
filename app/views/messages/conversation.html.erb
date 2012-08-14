@@ -1,0 +1,157 @@
+<div id="message_wrapper">
+	<div id="message_nav">
+		<ul class="nav">
+			<li class="visited"><span>INBOX</span></li>
+			<li><span>SENT</span></li>
+			<li><span>DRAFTS</span></li>
+			<li class="last"><span>TRASH</span></li>
+		</ul>
+	</div>
+	<div id="message_content">
+		<div id="message_actions">
+			<div id="image">
+				<%= image_tag("test/sample.jpg") %>
+			</div>
+			<h2>Playmate2012</h2>
+			<ul class="actions">
+				<li><button>Compose Message</button></li>
+				<li><button class="delete">Delete Messages</button></li>
+			</ul>
+            <%= select_tag "Folders", "<option>Move to Folder</option>
+                                       <option>Important</option>
+                                       <option>Personal</option>
+                                       <option>Business</option>
+            ".html_safe, :class => "select_tag" %>
+		
+		</div>
+			<div id="message_main">
+				<div id="leftside">
+					<div id="message_categories">
+						<ul>
+							<li class="visited"><span>All Messages</span></li>
+							<li><span>Friends</span></li>
+							<li><span>Strangers</span></li>
+							<li><span>Drafts</span></li>
+							<li class"last"><span>Trash</span></li>
+						</ul>
+					</div>
+					<div id="message_categories2">
+						<ul>
+							<li class="visited"><strong><span>Folders</span></strong></li>
+							<a href="#"><li><span>Personal</span></li></a>
+							<a href="#"><li><span>Business</span></li></a>
+							<a href="#"><li><span>Important</span></li></a>
+							<a href="#"><li><span>Create New Folder</span></li></a>
+						</ul>
+					</div>
+					<div id="ads">
+						<h2>Some Ads</h2>
+					</div>
+					
+				</div>
+				
+				<div id="message_message">
+
+					<ul>
+						<li class="first" id="conversation">
+							<div id="image">
+								<%= image_tag("test/techgnotic.gif") %>
+							</div>
+							<span class="username">Chabzlala29</span>
+							<span class="stat">1 week ago</span>
+							<div id="message">
+							<p>Hi! Welcome to Peekbox.tv enjoy ur stay . . .</p>
+							
+							</div>
+                            <%= check_box_tag "" %>
+							<button class="delete1">Delete</button>
+						</li>
+						<li id="conversation">
+							<div id="image">
+								<%= image_tag("test/sample.jpg") %>
+							</div>
+							<span class="username">Playmate2012</span>
+							<span class="stat">3 days ago</span>
+							<div id="message">
+							<p>Hi! Welcome to Peekbox.tv enjoy ur stay . . .</p>
+							</div>
+                            <%= check_box_tag "" %>
+							<button class="delete1">Delete</button>
+						</li>
+						<li id="conversation">
+							<div id="image">
+								<%= image_tag("test/techgnotic.gif") %>
+							</div>
+							<span class="username">Chabzlala29</span>
+							<span class="stat">2 days ago</span>
+							<div id="message">
+							<p>You too. . . Talagang astig d2 watch my TV shows =)</p>
+							</div>
+                            <%= check_box_tag "" %>
+							<button class="delete1">Delete</button>
+						</li>
+						<li id="conversation">
+							<div id="image">
+								<%= image_tag("test/sample.jpg") %>
+							</div>
+							<span class="username">Playmate2012</span>
+							<span class="stat">24 hours ago</span>
+							<div id="message">
+							<p>Oh sure I'll watch it later . . . Take care. . .=)</p>
+							</div>
+                            <%= check_box_tag "" %>
+							<button class="delete1">Delete</button>
+						</li>
+						<li id="conversation">
+							<div id="image">
+								<%= image_tag("test/techgnotic.gif") %>
+							</div>
+							<span class="username">Chabzlala29</span>
+							<span class="stat">22 hours ago</span>
+							<div id="message">
+								<p>
+								I think I should deactivate my facebook account I already found my home . . .=p
+								</p>
+								
+							</div>
+                            <%= check_box_tag "" %>
+							<button class="delete1">Delete</button>
+						</li>
+						<li id="conversation">
+							<div id="image">
+								<%= image_tag("test/sample.jpg") %>
+							</div>
+							<span class="username">Playmate2012</span>
+							<span class="stat">2 minutes ago</span>
+							<div id="message">
+								<p>
+								You're kidding me right?
+								</p>
+							</div>
+
+							<button class="delete1">Delete</button>
+                            <%= check_box_tag "" %>
+						</li>
+						<li id="conversation">
+							<div id="image">
+								<%= image_tag("test/techgnotic.gif") %>
+							</div>
+							<span class="username">Chabzlala29 <span>(Reply to Conversation)</span></span>
+							<textarea></textarea>
+							<button class="con_actions1">Leave a Reply</button>
+							<button class="con_actions2">Save to Drafts</button>
+						</li>
+						
+						
+					</ul>
+					
+				</div>
+				<div id="message_side">
+				<a href="#"><%= image_tag("test/ad1.jpg") %></a>
+				<div>
+					<h2>Some Ads</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

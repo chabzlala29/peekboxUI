@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peekboxbeta</title>
+  <%= init_tinymce_hammer_if_required %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "profile" %>
+  <%= csrf_meta_tags %>
+  
+</head>
+<body>
+	<div id="top_header">
+		<div id="wrapper">
+			<span id="promote">Post your own TV shows on the Web.</span>
+			<a href="#">
+				<div id="tour">
+					<span>Take a tour.</span>
+				</div>
+			</a>
+			<!--<div id="login">
+				<%= image_tag("layout/login.png") %>
+				<a href="#">Log In</a>
+				
+			</div>-->
+		</div>
+	</div>
+	<div id="header">
+		<div id="header_wrapper">
+			<div id="image">
+				<%= image_tag("logo.png") %>
+			</div>
+			<div id="nav">
+				<ul>
+					
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Profile</a>
+					</li>
+					<li>
+						<a href="#">TV Shows</a>
+					</li>
+					<li id="last">
+						<a href="#">Our Sponsors</a>
+					</li>
+					
+					
+				</ul>
+			</div>
+			<div id="profile">
+				<div id="profile_pic">
+					<%= image_tag("test/sample4.jpg"); %>
+				</div>
+				<span>Chabz</span>
+			</div>
+			
+			<button class="signup">Log out</button>
+		</div>
+	</div>
+	<div id="main_wrapper">
+		<%= yield %>
+	</div>
+	<div id="footer">
+		<center>
+			<ul>
+				<li><a href="#">About the Company</a>&nbsp&nbsp|&nbsp </li>
+				<li><a href="#">Help & FAQ</a>&nbsp&nbsp|&nbsp </li>
+				<li><a href="#">Contact Us</a>&nbsp&nbsp|&nbsp </li>
+				<li><a href="#">Advertise</a>&nbsp&nbsp|&nbsp </li>
+				<li><a href="#">Terms of Service & Privacy</a>&nbsp&nbsp|&nbsp</li>
+				<li><a href="#">Developers</a>&nbsp&nbsp|&nbsp </li>
+				<li><a href="#">Careers</a></li>
+			</ul>
+		</center>
+		<center>
+			<p>Copyright 2012. Peekbox TV All Rights Reserved.</p>
+		</center>
+	</div>
+</body>
+</html>
