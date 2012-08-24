@@ -1,0 +1,121 @@
+#welcome_wrapper
+  #welcome_div1
+    = image_tag("layout/bopose1.png")
+    #quote
+      %p
+        Peekbox TV is an online community that lets you upload your TV shows online.
+      %p
+        Let the world know about your hidden talents and let your confidence spread out througout the world.
+    = image_tag("layout/process.png")
+  #welcome_div2
+    %div
+      %h1 Not a Member Yet? Join Peekbox Now!
+      %table
+        %tr
+          %td
+            %span Email
+          %td
+            %input{:type => "text"}/
+        %tr
+          %td
+            %span Username
+          %td
+            %input{:type => "text"}/
+        %tr
+          %td
+            %span Password
+          %td
+            %input{:type => "password"}/
+        %tr
+          %td
+            %span Confirm Password
+          %td
+            %input{:type => "password"}/
+        %tr
+          %td
+          %td
+            %button Sign Up
+      %p
+        %strong Note:
+        By clicking Sign Up, you agree to our
+        %a{:href => "#"} Terms
+        and that you have read and understand our Data Use Policy, including our Cookie Use.
+    = image_tag("layout/bopose2.png")
+    %button#take Take a tour
+#welcome_wrapper2
+  #newmembers
+    %p.title New Members of Peekbox
+    %div
+      %span{:title => "Playmate2012"}= image_tag("test/sample.jpg")
+      %span{:title => "CandyCandy"}= image_tag("test/sample2.jpg")
+      %span{:title => "MrJowk"}= image_tag("test/sample3.jpg")
+      %span{:title => "Chabz"}= image_tag("test/sample4.jpg")
+      %span{:title => "Pickup"}= image_tag("test/sample5.jpg")
+      %span{:title => "Gracia"}= image_tag("test/sample6.jpg")
+      %span{:title => "CuteBaby"}= image_tag("test/sample7.jpg")
+      %span{:title => "Sample"}= image_tag("test/sample8.jpg")
+      %span{:title => "CandyCandy"}= image_tag("test/sample.jpg")
+      %span{:title => "MrJowk"}= image_tag("test/sample2.jpg")
+      %span{:title => "Pickup"}= image_tag("test/sample3.jpg")
+      %span{:title => "Chabz"}= image_tag("test/sample4.jpg")
+      %span{:title => "CuteBaby"}= image_tag("test/sample5.jpg")
+      %span{:title => "MrJowk"}= image_tag("test/sample6.jpg")
+      %span{:title => "CuteBaby"}= image_tag("test/sample7.jpg")
+      %span{:title => "Playmate2012"}= image_tag("test/sample8.jpg")
+      %span{:title => "MrJowk"}= image_tag("test/sample3.jpg")
+      %span{:title => "CandyCandy"}= image_tag("test/sample.jpg")
+    %span.quote
+      Learn more about
+      %a{:href => "#"} Peekbox TV
+  #newmembers
+    %p.title Most Online Members
+    %div
+      %span{:title => "Playmate2012"}= image_tag("test/sample.jpg")
+      %span{:title => "CandyCandy"}= image_tag("test/sample2.jpg")
+      %span{:title => "MrJowk"}= image_tag("test/sample3.jpg")
+      %span{:title => "Chabz"}= image_tag("test/sample4.jpg")
+      %span{:title => "Pickup"}= image_tag("test/sample5.jpg")
+      %span{:title => "Gracia"}= image_tag("test/sample6.jpg")
+      %span{:title => "CuteBaby"}= image_tag("test/sample7.jpg")
+      %span{:title => "Sample"}= image_tag("test/sample8.jpg")
+      %span{:title => "CandyCandy"}= image_tag("test/sample.jpg")
+      %span{:title => "MrJowk"}= image_tag("test/sample2.jpg")
+      %span{:title => "Pickup"}= image_tag("test/sample3.jpg")
+      %span{:title => "Chabz"}= image_tag("test/sample4.jpg")
+      %span{:title => "CuteBaby"}= image_tag("test/sample5.jpg")
+      %span{:title => "MrJowk"}= image_tag("test/sample6.jpg")
+      %span{:title => "CuteBaby"}= image_tag("test/sample7.jpg")
+      %span{:title => "Playmate2012"}= image_tag("test/sample8.jpg")
+      %span{:title => "MrJowk"}= image_tag("test/sample3.jpg")
+      %span{:title => "CandyCandy"}= image_tag("test/sample.jpg")
+    %span.quote
+      Join Peekbox TV Now! Click on
+      = succeed "." do
+        %a{:href => "#"} Sign Up
+  #signin
+    %p.title Already a Member? Sign In.
+    %table
+      %tr
+        %td
+          %span.label Email
+        %td
+          %input.textbox{:type => "text"}/
+      %tr
+        %td
+          %span.label Password
+        %td
+          %input.textbox{:type => "text"}/
+      %tr
+        %td
+        %td
+          %input{:type => "checkbox"}/
+          %span.label2 Keep me logged in.
+      %tr
+        %td
+        %td
+          %span.label2
+            %a{:href => "#"} Forgot Password?
+      %tr
+        %td
+        %td
+          %button Sign In

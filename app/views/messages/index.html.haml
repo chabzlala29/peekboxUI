@@ -1,0 +1,108 @@
+#message_wrapper
+  #message_nav
+    %ul.nav
+      %li.visited
+        %span INBOX
+      %li
+        %span SENT
+      %li
+        %span DRAFTS
+      %li.last
+        %span TRASH
+  #message_content
+    #message_actions
+      #image
+        = image_tag("test/sample4.jpg")
+      %h2 Chabzlala29
+      %ul.actions
+        %li
+          %button Compose Message
+        %li
+          %button.delete Delete Messages
+    #message_main
+      #leftside
+        #message_categories
+          %ul
+            %li.visited
+              %span All Messages
+            %li
+              %span Friends
+            %li
+              %span Strangers
+            %li
+              %span Drafts
+            <li class"last">
+            %span Trash
+        #ads
+          %h2 Some Ads
+      #message_message
+        %ul
+          %li.first
+            #image
+              = image_tag("test/techgnotic.gif")
+            %span.username Chabzlala29
+            %span.message Hi! Welcome to Peekbox.tv enjoy ur stay . . .
+            %span.stat 41 minutes ago
+            %button.delete Read
+            %button.delete Delete
+          %li
+            #image
+              = image_tag("test/sample.jpg")
+            %span.username Playmate2012
+            %span.message Hi! Welcome to Peekbox.tv enjoy ur stay . . .
+            %span.stat 1 hour ago
+            %button.delete Read
+            %button.delete Delete
+          %li
+            #image
+              = image_tag("test/sample2.jpg")
+            %span.username CandyCandy
+            %span.message This website is so amazing . . .
+            %span.stat 1 hour ago
+            %button.delete Read
+            %button.delete Delete
+          %li
+            #image
+              = image_tag("test/sample3.jpg")
+            %span.username RoughHeart
+            %span.message This site makes my heart soft.\m/
+            %span.stat 23 hours ago
+            %button.delete Read
+            %button.delete Delete
+          %li
+            #image
+              = image_tag("test/techgnotic.gif")
+            %span.username Chabzlala29
+            %span.message Hi! Welcome to Peekbox.tv enjoy ur stay . . .
+            %span.stat 1 day ago
+            %button.delete Read
+            %button.delete Delete
+          %li
+            #image
+              = image_tag("test/sample.jpg")
+            %span.username Playmate2012
+            %span.message Hi! Welcome to Peekbox.tv enjoy ur stay . . .
+            %span.stat 2 days ago
+            %button.delete Read
+            %button.delete Delete
+          %li
+            #image
+              = image_tag("test/sample2.jpg")
+            %span.username CandyCandy
+            %span.message This website is so amazing . . .
+            %span.stat 3 days ago
+            %button.delete Read
+            %button.delete Delete
+          %li
+            #image
+              = image_tag("test/sample3.jpg")
+            %span.username RoughHeart
+            %span.message This site makes my heart soft.\m/
+            %span.stat 1 week ago
+            %button.delete Read
+            %button.delete Delete
+        #pagination
+      #message_side
+        %a{:href => "#"}= image_tag("test/ad1.jpg")
+        %div
+          %h2 Some Ads

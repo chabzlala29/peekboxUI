@@ -1,0 +1,170 @@
+#profile_wrapper
+  #profile_nav
+    %ul.nav
+      %li.visited
+        %span PROFILE
+      %li
+        %span TV SHOWS
+      %li
+        %span GALLERY
+      %li.last
+        %span STATISTICS
+  #profile_profile
+    #div1
+      %h2 Charles Darwin D.C. Pobre
+      #image
+        = image_tag("test/sample4.jpg")
+    #div2
+      %h3 Web Developer | Pilipinas Productions
+      %ul
+        %li Caloocan City, Philippines
+        %li Interests: Graphics, Web Development
+      #peek_points
+        = image_tag("layout/star.png")
+        %span
+          %strong 500
+          Peek Points
+      #getmore
+        %a{:href => "#"} Get more points!
+    #div3
+      %h3 Statistics:
+      %ul
+        %li
+          %strong Profile Views:
+          %span 344
+        %li
+          %strong Total Peeks:
+          %span 400
+        %li
+          %strong Friends:
+          %span 765
+        %li
+          %strong TV Shows:
+          %span 30
+        %li
+          %strong Photos:
+          %span 123
+  #profile_body
+    #main
+      #videos
+        %h3 Featured TV Shows
+        %ul#videos_hover
+          %li
+            #container
+              #image
+                = image_tag("test/1.jpg")
+              #statement
+                %p
+                  %strong Sony invests for Peekbox
+                  %br/
+                  %br/
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ullamcorper ultricies elit, id facilisis velit vehicula eu. . .
+                  %a{:href => "#"} read more
+          %li
+            #container
+              #image
+                = image_tag("test/2.jpg")
+              #statement
+                #statement
+                  %p
+                    %strong Peekbox Online Craze
+                    %br/
+                    %br/
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ullamcorper ultricies elit, id facilisis velit vehicula eu. . .
+                    %a{:href => "#"} read more
+          %li
+            #container
+              #image
+                = image_tag("test/3.jpg")
+              #statement
+                %p
+                  %strong Video Contest
+                  %br/
+                  %br/
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ullamcorper ultricies elit, id facilisis velit vehicula eu. . .
+                  %a{:href => "#"} read more
+        #videos_extra
+          %h3 About Me
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ullamcorper ultricies elit, id facilisis velit vehicula eu. . .
+          %br/
+          %h3 Profile URL:
+          %p
+            http://peekbox.tv/chabzpobre
+      #wall
+        %h4 What do you want to do?
+        #add_activity
+          %ul
+            %li
+              %button Post Something
+            %li
+              %button Add Event
+            %li
+              %button.special Upload TV Show
+        %ul#posts
+          %li
+            #stat
+              #image
+                = image_tag("test/sample.jpg")
+              %span.name
+                %a{:href => "#"}
+                  %strong Playmate2012
+                posts an Event
+              %br/
+              %span 2 hours ago
+            #post_image
+              %h5 Sample Event
+              = image_tag("test/2.jpg")
+          %li
+            #stat
+              #image
+                = image_tag("test/sample.jpg")
+              %span.name
+                %a{:href => "#"}
+                  %strong Playmate2012
+                posts an Event
+              %br/
+              %span 2 hours ago
+            #post_image
+              %h5 Sample Event
+              = image_tag("test/1.jpg")
+          %li
+            #stat
+              #image
+                = image_tag("test/sample.jpg")
+              %span.name
+                %a{:href => "#"}
+                  %strong Playmate2012
+                posts an Event
+              %br/
+              %span 2 hours ago
+            #post_image
+              %h5 Sample Event
+              = image_tag("test/3.jpg")
+          %li
+            #stat
+              #image
+                = image_tag("test/sample.jpg")
+              %span.name
+                %a{:href => "#"}
+                  %strong Playmate2012
+                posts an Event
+              %br/
+              %span 2 hours ago
+            #post_image
+              %h5 Sample Event
+              = image_tag("test/3.jpg")
+          %li
+            #stat
+              #image
+                = image_tag("test/sample.jpg")
+              %span.name
+                %a{:href => "#"}
+                  %strong Playmate2012
+                posts an Event
+              %br/
+              %span 2 hours ago
+            #post_image
+              %h5 Sample Event
+              = image_tag("test/3.jpg")
+    #side

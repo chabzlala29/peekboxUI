@@ -1,0 +1,36 @@
+#message_wrapper
+  #message_nav
+    %ul.nav
+      %li.visited
+        %span INBOX
+      %li
+        %span SENT
+  #message_compose_wrapper
+    %h2 Compose New Message
+    #message_compose
+      %table{:cellspacing => "10"}
+        %tr
+          %td
+            %span To
+          %td
+            %input{:onBlur => "if(this.value==''){this.value = 'Enter Recepient Name';}", :onFocus => "if(this.value == 'Enter Recepient Name'){this.value='';}", :type => "text", :value => "Enter Recepient Name"}/
+        %tr
+          %td
+            %span Subject
+          %td
+            %input{:onBlur => "if(this.value==''){this.value = 'Enter Subject';}", :onFocus => "if(this.value == 'Enter Subject'){this.value='';}", :type => "text", :value => "Enter Subject"}/
+        %tr
+          %td
+            %span Message
+          %td
+            %textarea
+      %ul
+        %li
+          %button#drafts Save to Drafts
+        %li
+          %button Send
+    #message_notice
+      = image_tag("layout/bopose1.png")
+      %h2 Send Bo a Message
+      %textarea
+      %button Send

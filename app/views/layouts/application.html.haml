@@ -1,0 +1,68 @@
+!!!
+%html
+  %head
+    %title Peekboxbeta
+    = init_tinymce_hammer_if_required
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = javascript_include_tag "profile"
+    = csrf_meta_tags
+  %body
+    #top_header
+      #wrapper
+        %span#promote Post your own TV shows on the Web.
+        %a{:href => "#"}
+          #tour
+            %span Take a tour.
+        /
+          <div id="login">
+          <haml:loud> image_tag(&quot;layout/login.png&quot;) </haml:loud>
+          <a href="#">Log In</a>
+
+          </div>
+    #header
+      #header_wrapper
+        #image
+          = image_tag("logo.png")
+        #nav
+          %ul
+            %li
+              %a{:href => "#"} Home
+            %li
+              %a{:href => "#"} Profile
+            %li
+              %a{:href => "#"} TV Shows
+            %li#last
+              %a{:href => "#"} Our Sponsors
+        #profile
+          #profile_pic
+            = image_tag("test/sample4.jpg");
+          %span Chabz
+        %button.signup Log out
+    #main_wrapper
+      = yield
+    #footer
+      %center
+        %ul
+          %li
+            %a{:href => "#"}> About the Company
+            \  | 
+          %li
+            %a{:href => "#"}> Help & FAQ
+            \  | 
+          %li
+            %a{:href => "#"}> Contact Us
+            \  | 
+          %li
+            %a{:href => "#"}> Advertise
+            \  | 
+          %li
+            %a{:href => "#"}> Terms of Service & Privacy
+            \  | 
+          %li
+            %a{:href => "#"}> Developers
+            \  | 
+          %li
+            %a{:href => "#"} Careers
+      %center
+        %p Copyright 2012. Peekbox TV All Rights Reserved.

@@ -1,0 +1,130 @@
+#message_wrapper
+  #message_nav
+    %ul.nav
+      %li.visited
+        %span INBOX
+      %li
+        %span SENT
+      %li
+        %span DRAFTS
+      %li.last
+        %span TRASH
+  #message_content
+    #message_actions
+      #image
+        = image_tag("test/sample.jpg")
+      %h2 Playmate2012
+      %ul.actions
+        %li
+          %button Compose Message
+        %li
+          %button.delete Delete Messages
+      = select_tag "Folders", "<option>Move to Folder</option> |
+                                   <option>Important</option>  |
+                                   <option>Personal</option>   |
+                                   <option>Business</option>   |
+        ".html_safe, :class => "select_tag"                    |
+    #message_main
+      #leftside
+        #message_categories
+          %ul
+            %li.visited
+              %span All Messages
+            %li
+              %span Friends
+            %li
+              %span Strangers
+            %li
+              %span Drafts
+            <li class"last">
+            %span Trash
+        #message_categories2
+          %ul
+            %li.visited
+              %strong
+                %span Folders
+            %a{:href => "#"}
+              %li
+                %span Personal
+            %a{:href => "#"}
+              %li
+                %span Business
+            %a{:href => "#"}
+              %li
+                %span Important
+            %a{:href => "#"}
+              %li
+                %span Create New Folder
+        #ads
+          %h2 Some Ads
+      #message_message
+        %ul
+          %li#conversation.first
+            #image
+              = image_tag("test/techgnotic.gif")
+            %span.username Chabzlala29
+            %span.stat 1 week ago
+            #message
+              %p Hi! Welcome to Peekbox.tv enjoy ur stay . . .
+            = check_box_tag ""
+            %button.delete1 Delete
+          %li#conversation
+            #image
+              = image_tag("test/sample.jpg")
+            %span.username Playmate2012
+            %span.stat 3 days ago
+            #message
+              %p Hi! Welcome to Peekbox.tv enjoy ur stay . . .
+            = check_box_tag ""
+            %button.delete1 Delete
+          %li#conversation
+            #image
+              = image_tag("test/techgnotic.gif")
+            %span.username Chabzlala29
+            %span.stat 2 days ago
+            #message
+              %p You too. . . Talagang astig d2 watch my TV shows =)
+            = check_box_tag ""
+            %button.delete1 Delete
+          %li#conversation
+            #image
+              = image_tag("test/sample.jpg")
+            %span.username Playmate2012
+            %span.stat 24 hours ago
+            #message
+              %p Oh sure I'll watch it later . . . Take care. . .=)
+            = check_box_tag ""
+            %button.delete1 Delete
+          %li#conversation
+            #image
+              = image_tag("test/techgnotic.gif")
+            %span.username Chabzlala29
+            %span.stat 22 hours ago
+            #message
+              %p
+                I think I should deactivate my facebook account I already found my home . . .=p
+            = check_box_tag ""
+            %button.delete1 Delete
+          %li#conversation
+            #image
+              = image_tag("test/sample.jpg")
+            %span.username Playmate2012
+            %span.stat 2 minutes ago
+            #message
+              %p
+                You're kidding me right?
+            %button.delete1 Delete
+            = check_box_tag ""
+          %li#conversation
+            #image
+              = image_tag("test/techgnotic.gif")
+            %span.username
+              Chabzlala29
+              %span (Reply to Conversation)
+            %textarea
+            %button.con_actions1 Leave a Reply
+            %button.con_actions2 Save to Drafts
+      #message_side
+        %a{:href => "#"}= image_tag("test/ad1.jpg")
+        %div
+          %h2 Some Ads
